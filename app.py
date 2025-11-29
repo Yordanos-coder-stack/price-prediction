@@ -11,7 +11,7 @@ model = joblib.load("stock_price_model.pkl")
 st.header("Please input Features")
 Open_close = st.number_input("Open_close", value=0.0)
 Low_high = st.number_input("Low_high ", value=0.0)
-Is_quarter_end3 = st.number_input("Is_quarter_end3", value=0.0)
+Is_quarter_end = st.number_input("Is_quarter_end3", value=0.0)
 if st.button("Predict Price"):
     # Create a DataFrame for the input features
     input_data = pd.DataFrame({
