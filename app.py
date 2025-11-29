@@ -5,7 +5,7 @@ import pandas as pd
 st.title("Price Prediction App")
 
 # Load the pre-trained model
-model = joblib.load("price_prediction_model.pkl")
+model = joblib.load("stock_price_model.pkl")
 
 # Define input features
 st.header("Input Features")
