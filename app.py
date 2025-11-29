@@ -9,14 +9,14 @@ model = joblib.load("stock_price_model.pkl")
 
 # Define input features
 st.header("Please input Features")
-feature1 = st.number_input("Feature 1", value=0.0)
-feature2 = st.number_input("Feature 2", value=0.0)
-feature3 = st.number_input("Feature 3", value=0.0)
+Open_close = st.number_input("Feature 1", value=0.0)
+Low_high = st.number_input("Feature 2", value=0.0)
+Is_quarter_end3 = st.number_input("Feature 3", value=0.0)
 if st.button("Predict Price"):
     # Create a DataFrame for the input features
     input_data = pd.DataFrame({
-        'open-close': [feature1],
-        'Low-high': [feature2],
+        'Open_close': [feature1],
+        'Low_high': [feature2],
         'Is_quarter_end': [feature3]
     })
     
