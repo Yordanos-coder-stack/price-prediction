@@ -15,7 +15,7 @@ feature3 = st.number_input("Feature 3", value=0.0)
 if st.button("Predict Price"):
     # Create a DataFrame for the input features
     input_data = pd.DataFrame({
-        'open-close'': [feature1],
+        'open-close': [feature1],
         'Low-high': [feature2],
         'Is_quarter_end': [feature3]
     })
