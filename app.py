@@ -8,16 +8,16 @@ st.title("Price Prediction App")
 model = joblib.load("stock_price_model.pkl")
 
 # Define input features
-st.header("Input Features")
+st.header("Please input Features")
 feature1 = st.number_input("Feature 1", value=0.0)
 feature2 = st.number_input("Feature 2", value=0.0)
 feature3 = st.number_input("Feature 3", value=0.0)
 if st.button("Predict Price"):
     # Create a DataFrame for the input features
     input_data = pd.DataFrame({
-        'feature1': [feature1],
-        'feature2': [feature2],
-        'feature3': [feature3]
+        'open-close'': [feature1],
+        'Low-high': [feature2],
+        'Is_quarter_end': [feature3]
     })
     
     # Make prediction
